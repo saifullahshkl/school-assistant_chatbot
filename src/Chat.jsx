@@ -5,7 +5,7 @@ import { useSpeechRecognition } from 'react-speech-recognition';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import ReportPDF from './ReportPDF';
 import { FiSend, FiMic, FiLogOut } from 'react-icons/fi';
-import './Chat.css';
+import './chat.css';
 
 const isGreeting = (input) => {
   return /^(hi|hello|hey|greetings?|good\s(morning|afternoon|evening))/i.test(input.trim());
