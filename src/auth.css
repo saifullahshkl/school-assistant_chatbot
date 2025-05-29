@@ -1,0 +1,101 @@
+.gradient-auth {
+  background: linear-gradient(120deg, #f6d365, #fda085);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.auth-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 360px;
+  text-align: center;
+}
+.auth-card h1 {
+  margin-bottom: 1rem;
+  color: #4a5568;
+}
+.auth-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.auth-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #4a5568;
+}
+.auth-group input {
+  width: 93%;
+  padding: 0.75rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 0.5rem;
+}
+.password-group {
+  position: relative;
+}
+.toggle-pw {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.btn-login {
+  width: 100%;
+  padding: 0.75rem;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+}
+.btn-login .spin {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #e2e8f0;
+}
+.divider span {
+  margin: 0 1rem;
+  color: #a0aec0;
+}
+.btn-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 0.5rem;
+  background: white;
+}
+.btn-google:hover {
+  background: #f7fafc;
+}
+.request {
+  margin-top: 1rem;
+  color: #718096;
+}
+.request button {
+  background: none;
+  border: none;
+  color: #667eea;
+  cursor: pointer;
+}
